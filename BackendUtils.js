@@ -42,7 +42,7 @@ async function syncBattlePass(user) {
 class Database {
   constructor() {
     this.mongoUri = process.env.mongoUri;
-    this.dbName = "StumbleRanked";
+    this.dbName = "StumbleCoral";
     this.client = null;
     this.db = null;
     this.collections = {
@@ -156,14 +156,14 @@ class Database {
           minVersion: "0.56",
           startTime: new Date("2025-07-24T10:00:00Z"),
           endTime: new Date("2025-08-07T10:00:00Z"),
-          nameKey: "Ranked 1x1",
+          nameKey: "Coral 1v1 BD (only punch)",
           descriptionKey: "RANKED_TOURNAMENT_DESC",
           listItemBackgroundImage: "Ranked_Background_Image_Tournaments_Card",
           detailsPanelBackgroundImage: "Ranked_Background_Image_Tournaments",
-          prizeBannerColour: "#00FFCC",
-          headerColour: "#00FFCC",
-          mapListGradientColourTop: "#00FFCC",
-          mapListGradientColourBottom: "#006666",
+          prizeBannerColour: "#4169E1",
+          headerColour: "#4169E1",
+          mapListGradientColourTop: "#4169E1",
+          mapListGradientColourBottom: "#4169E1",
           listPriority: 0,
           minPlayers: 2,
           maxPlayers: 2,
@@ -178,13 +178,13 @@ class Database {
           detailsPanelBorderColourTop: "#00FFCC",
           detailsPanelBorderColourBottom: "#006666",
           colourData: {
-            detailsPanelMainColour: "#00CC99",
-            detailsPanelBorderColour: "#00FFCC",
-            headerGradientRight: "#00CC99",
-            headerGradientLeft: "#00FFCC",
-            infoWidgetsGradientRight: "#00CC99",
-            infoWidgetsGradientLeft: "#009977",
-            infoWidgetsBorderColour: "#00FFCC"
+            detailsPanelMainColour: "#4169E1",
+            detailsPanelBorderColour: "#4169E1",
+            headerGradientRight: "#4169E1",
+            headerGradientLeft: "#4169E1",
+            infoWidgetsGradientRight: "#4169E1",
+            infoWidgetsGradientLeft: "#4169E1",
+            infoWidgetsBorderColour: "#4169E1"
           },
           rounds: [
             {
@@ -330,7 +330,7 @@ class UserModel {
   static async create(ip, deviceId, platformData = {}) {
   const now = new Date();
   const userId = Math.floor(Math.random() * 999);
-  const username = 'StumblRanked#<sup>' + userId;
+  const username = 'StumbleCoral#<sup>' + userId;
   
   let ipCountry = 'US';
   let ipRegion = 'NA';
@@ -2982,14 +2982,14 @@ class TournamentXController {
       minVersion: "0.56",
       startTime: new Date(),
       endTime: new Date(Date.now() + 5 * 365 * 24 * 60 * 60 * 1000),
-      nameKey: "Ranked BDL 1v1 Duels",
-      descriptionKey: "(.gg/stumbleranked) - Compete in free-for-all matches, be the last one standing to win!",
+      nameKey: "Coral BDL 1v1 (only punch)",
+      descriptionKey: ".gg/sgcoral",
       listItemBackgroundImage: "STPBlockDash_Background_Image_Tournaments_Card",
       detailsPanelBackgroundImage: "STPBlockDash_Background_Image_Tournaments",
-prizeBannerColour: "#4FC3FF",
-headerColour: "#6FD0FF",
-mapListGradientColourTop: "#8BDFFF",
-mapListGradientColourBottom: "#3BA8FF",
+      prizeBannerColour: "#4169E1",
+      headerColour: "#4169E1",
+      mapListGradientColourTop: "#4169E1",
+      mapListGradientColourBottom: "#4169E1",
       listPriority: 1,
       minPlayers: 2,
       maxPlayers: 2,
@@ -3001,16 +3001,16 @@ mapListGradientColourBottom: "#3BA8FF",
       entryCurrencyCost2: 1,
       areEmotesRestricted: true,
       prohibitedEmotes: [2, 4, 5, 6],
-detailsPanelBorderColourTop: "#6FD0FF",
-detailsPanelBorderColourBottom: "#3BA8FF",
+detailsPanelBorderColourTop: "#4169E1",
+detailsPanelBorderColourBottom: "#4169E1",
 colourData: {
-  detailsPanelMainColour: "#4FC3FF",
-  detailsPanelBorderColour: "#6FD0FF",
-  headerGradientRight: "#4FC3FF",
-  headerGradientLeft: "#6FD0FF",
-  infoWidgetsGradientRight: "#4FC3FF",
-  infoWidgetsGradientLeft: "#3BA8FF",
-  infoWidgetsBorderColour: "#6FD0FF"
+  detailsPanelMainColour: "#4169E1",
+  detailsPanelBorderColour: "#4169E1",
+  headerGradientRight: "#4169E1",
+  headerGradientLeft: "#4169E1",
+  infoWidgetsGradientRight: "#4169E1",
+  infoWidgetsGradientLeft: "#4169E1",
+  infoWidgetsBorderColour: "#4169E1"
 },
 
       rounds: [
@@ -3049,14 +3049,14 @@ colourData: {
       minVersion: "0.56",
       startTime: new Date(),
       endTime: new Date(Date.now() + 5 * 365 * 24 * 60 * 60 * 1000),
-      nameKey: "Ranked BD 1v1 Duels",
-      descriptionKey: "(.gg/stumbledranked) - Fast 1v1 duels. Pure skill. Only victory.",
+      nameKey: "Coral BD 1v1 (only punch)",
+      descriptionKey: "(.gg/sgcoral)",
       listItemBackgroundImage: "Punchapalooza_Background_Image_Tournaments_Card",
       detailsPanelBackgroundImage: "Punchapalooza_Background_Image_Tournaments",
-prizeBannerColour: "#328bffff",
-headerColour: "#328bffff",
-mapListGradientColourTop: "#328bffff",
-mapListGradientColourBottom: "#328bffff",
+      prizeBannerColour: "#4169E1",
+      headerColour: "#4169E1",
+      mapListGradientColourTop: "#4169E1",
+      mapListGradientColourBottom: "#4169E1",
       listPriority: 2,
       minPlayers: 2,
       maxPlayers: 2,
@@ -3068,16 +3068,16 @@ mapListGradientColourBottom: "#328bffff",
       entryCurrencyCost2: 1,
       areEmotesRestricted: true,
       prohibitedEmotes: [2, 4, 5, 6],
-detailsPanelBorderColourTop: "#328bffff",
-detailsPanelBorderColourBottom: "#328bffff",
+detailsPanelBorderColourTop: "#4169E1",
+detailsPanelBorderColourBottom: "#4169E1",
 colourData: {
-  detailsPanelMainColour: "#328bffff",
-  detailsPanelBorderColour: "#328bffff",
-  headerGradientRight: "#328bffff",
-  headerGradientLeft: "#328bffff",
-  infoWidgetsGradientRight: "#328bfffff",
-  infoWidgetsGradientLeft: "#328bffff",
-  infoWidgetsBorderColour: "#328bffff"
+  detailsPanelMainColour: "#4169E1",
+  detailsPanelBorderColour: "#4169E1",
+  headerGradientRight: "#4169E1",
+  headerGradientLeft: "#4169E1",
+  infoWidgetsGradientRight: "#4169E1",
+  infoWidgetsGradientLeft: "#4169E1",
+  infoWidgetsBorderColour: "#4169E1"
 },
 
       rounds: [
@@ -3124,14 +3124,14 @@ colourData: {
       minVersion: "0.56",
       startTime: new Date(),
       endTime: new Date(Date.now() + 5 * 365 * 24 * 60 * 60 * 1000),
-      nameKey: "Ranked RH 1v1 Duels",
-      descriptionKey: "(.gg/stumbledranked) - Win, Farps and be the best",
+      nameKey: "Coral Rush Hour 1v1",
+      descriptionKey: "(.gg/sgcoral)",
       listItemBackgroundImage: "IceSki_Background_Image_Tournaments_Card",
       detailsPanelBackgroundImage: "IceSki_Background_Image_Tournaments",
-prizeBannerColour: "#29ffdb3b",
-headerColour: "#32ffd3ff",
-mapListGradientColourTop: "#5bffb2ff",
-mapListGradientColourBottom: "#3cffffff",
+      prizeBannerColour: "#4169E1",
+      headerColour: "#4169E1",
+      mapListGradientColourTop: "#4169E1",
+      mapListGradientColourBottom: "#4169E1",
       listPriority: 2,
       minPlayers: 2,
       maxPlayers: 2,
@@ -3143,16 +3143,16 @@ mapListGradientColourBottom: "#3cffffff",
       entryCurrencyCost2: 1,
       areEmotesRestricted: true,
       prohibitedEmotes: [1, 2, 3, 4, 6, 7, 8, 9, 10],
-detailsPanelBorderColourTop: "#6EC9FF",
-detailsPanelBorderColourBottom: "#3DA6FF",
+detailsPanelBorderColourTop: "#4169E1",
+detailsPanelBorderColourBottom: "#4169E1",
 colourData: {
-  detailsPanelMainColour: "#55BFFF",
-  detailsPanelBorderColour: "#66CCFF",
-  headerGradientRight: "#3DA6FF",
-  headerGradientLeft: "#8ED8FF",
-  infoWidgetsGradientRight: "#4BB7FF",
-  infoWidgetsGradientLeft: "#9BE1FF",
-  infoWidgetsBorderColour: "#8ED8FF"
+  detailsPanelMainColour: "#4169E1",
+  detailsPanelBorderColour: "#4169E1",
+  headerGradientRight: "#4169E1",
+  headerGradientLeft: "#4169E1",
+  infoWidgetsGradientRight: "#4169E1",
+  infoWidgetsGradientLeft: "#4169E1",
+  infoWidgetsBorderColour: "#4169E1"
 },
       rounds: [
         {
