@@ -42,7 +42,7 @@ async function syncBattlePass(user) {
 class Database {
   constructor() {
     this.mongoUri = process.env.mongoUri;
-    this.dbName = "StumbleCoral";
+    this.dbName = "Stumble";
     this.client = null;
     this.db = null;
     this.collections = {
@@ -3001,18 +3001,17 @@ class TournamentXController {
       entryCurrencyCost2: 1,
       areEmotesRestricted: true,
       prohibitedEmotes: [2, 4, 5, 6],
-detailsPanelBorderColourTop: "#4169E1",
-detailsPanelBorderColourBottom: "#4169E1",
-colourData: {
-  detailsPanelMainColour: "#4169E1",
-  detailsPanelBorderColour: "#4169E1",
-  headerGradientRight: "#4169E1",
-  headerGradientLeft: "#4169E1",
-  infoWidgetsGradientRight: "#4169E1",
-  infoWidgetsGradientLeft: "#4169E1",
-  infoWidgetsBorderColour: "#4169E1"
-},
-
+      detailsPanelBorderColourTop: "#4169E1",
+      detailsPanelBorderColourBottom: "#4169E1",
+      colourData: {
+        detailsPanelMainColour: "#4169E1",
+        detailsPanelBorderColour: "#4169E1",
+        headerGradientRight: "#4169E1",
+        headerGradientLeft: "#4169E1",
+        infoWidgetsGradientRight: "#4169E1",
+        infoWidgetsGradientLeft: "#4169E1",
+        infoWidgetsBorderColour: "#4169E1"
+      },
       rounds: [
         {
           roundOrder: 1,
@@ -3068,18 +3067,17 @@ colourData: {
       entryCurrencyCost2: 1,
       areEmotesRestricted: true,
       prohibitedEmotes: [2, 4, 5, 6],
-detailsPanelBorderColourTop: "#4169E1",
-detailsPanelBorderColourBottom: "#4169E1",
-colourData: {
-  detailsPanelMainColour: "#4169E1",
-  detailsPanelBorderColour: "#4169E1",
-  headerGradientRight: "#4169E1",
-  headerGradientLeft: "#4169E1",
-  infoWidgetsGradientRight: "#4169E1",
-  infoWidgetsGradientLeft: "#4169E1",
-  infoWidgetsBorderColour: "#4169E1"
-},
-
+      detailsPanelBorderColourTop: "#4169E1",
+      detailsPanelBorderColourBottom: "#4169E1",
+      colourData: {
+        detailsPanelMainColour: "#4169E1",
+        detailsPanelBorderColour: "#4169E1",
+        headerGradientRight: "#4169E1",
+        headerGradientLeft: "#4169E1",
+        infoWidgetsGradientRight: "#4169E1",
+        infoWidgetsGradientLeft: "#4169E1",
+        infoWidgetsBorderColour: "#4169E1"
+      },
       rounds: [
         {
           roundOrder: 1,
@@ -3143,17 +3141,17 @@ colourData: {
       entryCurrencyCost2: 1,
       areEmotesRestricted: true,
       prohibitedEmotes: [1, 2, 3, 4, 6, 7, 8, 9, 10],
-detailsPanelBorderColourTop: "#4169E1",
-detailsPanelBorderColourBottom: "#4169E1",
-colourData: {
-  detailsPanelMainColour: "#4169E1",
-  detailsPanelBorderColour: "#4169E1",
-  headerGradientRight: "#4169E1",
-  headerGradientLeft: "#4169E1",
-  infoWidgetsGradientRight: "#4169E1",
-  infoWidgetsGradientLeft: "#4169E1",
-  infoWidgetsBorderColour: "#4169E1"
-},
+      detailsPanelBorderColourTop: "#4169E1",
+      detailsPanelBorderColourBottom: "#4169E1",
+      colourData: {
+        detailsPanelMainColour: "#4169E1",
+        detailsPanelBorderColour: "#4169E1",
+        headerGradientRight: "#4169E1",
+        headerGradientLeft: "#4169E1",
+        infoWidgetsGradientRight: "#4169E1",
+        infoWidgetsGradientLeft: "#4169E1",
+        infoWidgetsBorderColour: "#4169E1"
+      },
       rounds: [
         {
           roundOrder: 1,
@@ -3202,7 +3200,7 @@ colourData: {
         { amount: 1, awardId: 4, awardJson: { id: "Emote047_XmasSkull" }, type: "EMOTE", xp: 20 },
         { amount: 50, awardId: 5, awardJson: { name: "dust" }, type: "CURRENCY", xp: 25 },
         { amount: 1, awardId: 6, awardJson: { id: "emote_thumb" }, type: "EMOTE", xp: 30 },
-        { amount: 50, awardId: 7, awardJson: { name: "dusy" }, type: "CURRENCY", xp: 35 },
+        { amount: 50, awardId: 7, awardJson: { name: "dust" }, type: "CURRENCY", xp: 35 },
         { amount: 1, awardId: 8, awardJson: { id: "SKIN210" }, type: "SKIN", xp: 40 },
         { amount: 1, awardId: 9, awardJson: { id: "Emote060_HoldingTears" }, type: "EMOTE", xp: 45 },
         { amount: 1, awardId: 10, awardJson: { id: "SKIN123" }, type: "SKIN", xp: 50 },
@@ -3246,6 +3244,8 @@ colourData: {
       res.status(500).json({ message: "erro interno" });
     }
   }
+
+module.exports = TournamentXController;
 
   static generateEncryptedEntry(partyData, userData) {
     const dataToEncrypt = {
