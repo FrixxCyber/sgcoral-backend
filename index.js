@@ -28,7 +28,7 @@ const {
 } = require("./BackendUtils");
 
 const app = express();
-const Title = "Stumble Peak Backend " + process.env.version;
+const Title = "Stumble Priv Backend " + process.env.version;
 const PORT = process.env.PORT || 8080;
 
 app.use(express.json());
