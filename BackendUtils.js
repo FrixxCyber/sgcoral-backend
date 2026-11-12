@@ -42,7 +42,7 @@ async function syncBattlePass(user) {
 class Database {
   constructor() {
     this.mongoUri = process.env.mongoUri;
-    this.dbName = "StumbleFire";
+    this.dbName = "StumblePriv";
     this.client = null;
     this.db = null;
     this.collections = {
@@ -330,7 +330,7 @@ class UserModel {
   static async create(ip, deviceId, platformData = {}) {
   const now = new Date();
   const userId = Math.floor(Math.random() * 999);
-  const username = 'FirePlayer#<sup>' + userId;
+  const username = 'PrivPlayer<gradient=purple=#' + userId>;
   
   let ipCountry = 'US';
   let ipRegion = 'NA';
@@ -2983,7 +2983,7 @@ class TournamentXController {
       startTime: new Date(),
       endTime: new Date(Date.now() + 5 * 365 * 24 * 60 * 60 * 1000),
       nameKey: "BD 1v1 (Only Punch)",
-      descriptionKey: ".gg/sgfire",
+      descriptionKey: ".gg/sgpriv",
       listItemBackgroundImage: "Punchapalooza_Background_Image_Tournaments_Card",
       detailsPanelBackgroundImage: "Punchapalooza_Background_Image_Tournaments",
       prizeBannerColour: "#4FC3FF",
@@ -3050,7 +3050,7 @@ colourData: {
       startTime: new Date(),
       endTime: new Date(Date.now() + 5 * 365 * 24 * 60 * 60 * 1000),
       nameKey: "BDL 1v1 (Only Punch)",
-      descriptionKey: ".gg/sgfire",
+      descriptionKey: ".gg/sgpriv",
       listItemBackgroundImage: "STPBlockDash_Background_Image_Tournaments_Card",
       detailsPanelBackgroundImage: "STPBlockDash_Background_Image_Tournaments",
       prizeBannerColour: "#328bffff",
@@ -3125,7 +3125,7 @@ colourData: {
       startTime: new Date(),
       endTime: new Date(Date.now() + 5 * 365 * 24 * 60 * 60 * 1000),
       nameKey: "RH 1v1 (No Emote)",
-      descriptionKey: ".gg/sgfire",
+      descriptionKey: ".gg/sgpriv",
       listItemBackgroundImage: "List_Item_Background_Art_Green",
       detailsPanelBackgroundImage: "Green_Background_Image_Tournaments",
 prizeBannerColour: "#29ffdb3b",
