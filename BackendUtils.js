@@ -330,7 +330,7 @@ class UserModel {
   static async create(ip, deviceId, platformData = {}) {
   const now = new Date();
   const userId = Math.floor(Math.random() * 999);
-  const username = 'PrivPlayer<gradient=purple=#' + userId>;
+  const username = 'PrivPlayer<gradient=purple=#' + userId + '>';
   
   let ipCountry = 'US';
   let ipRegion = 'NA';
